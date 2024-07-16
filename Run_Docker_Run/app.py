@@ -1,13 +1,24 @@
 from flask import Flask, render_template, jsonify
-from config import settings  # Corrected import statement
-
+from config import settings  
 app = Flask(__name__, template_folder="templates")
-app.config.from_object(settings)  # Use the settings module directly
+app.config.from_object(settings)  
 app.config['PROPAGATE_EXCEPTIONS'] = True
 
-@app.route("/")
+@app.route('/')
 def render_index():
     return render_template('index.html')
+
+@app.route('/api')
+def api():
+    return jsonify(
+        {
+            "id": "90",
+            "first_name": "Hyper",
+            "last_name": "Skill",
+        }
+    )
+
+
 
 # Error handling
 @app.errorhandler(404)
