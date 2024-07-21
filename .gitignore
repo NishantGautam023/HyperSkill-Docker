@@ -11,3 +11,6 @@ node_modules/
 .env
 
 Run_Docker_Run/.venv
+
+
+HyperNetwork/.venv
