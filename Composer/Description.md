@@ -36,3 +36,25 @@ Objectives
 - Define the network with the hyper-task-manager-network name;
 - Add the network to the mongodb service.
 - Add the volume to the mongodb service and map it to the container's /data/db directory.
+
+
+
+## Stage3
+
+Task manager
+
+Description
+
+In this stage, integrate the main application as an additional service. To accomplish this, use the provided Dockerfile located in the project directory. Use the relevant command leveraging the Dockerfile to construct an image encompassing the main application. Subsequently, define the essential environment variables that your application will utilize. Please adhere to the following objectives to complete your assigned tasks.
+
+Objectives
+
+- Add another service to the docker-compose.yaml file with the attributes below;
+- Define the service with the hyper-service name;
+- Add the command to build the image for your service;
+- Define the container name with the hyper-task-manager value;
+- Define the MONGO_INITDB_ROOT_USERNAME environment variable with the ${MONGO_INITDB_ROOT_USERNAME} value;
+- Define the MONGO_INITDB_ROOT_PASSWORD environment variable with the ${MONGO_INITDB_ROOT_PASSWORD} value;
+- Define the MONGO_HOST_NAME environment variable with the mongodb value;
+- Define the MONGO_PORT_NUMBER environment variable with the 27017 value;
+- Define the env_file option for the .env file.
