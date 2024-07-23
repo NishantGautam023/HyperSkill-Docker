@@ -9,7 +9,7 @@ app = FastAPI()
 
 # Get MongoDB connection parameters
 host = os.environ.get('MONGO_HOST_NAME')
-mongo_port_number = int(os.environ.get('MONGO_PORT_NUBMER'))
+mongo_port_number = int(os.environ.get('MONGO_PORT_NUMBER'))
 username = os.environ.get('MONGO_INITDB_ROOT_USERNAME')
 password = os.environ.get('MONGO_INITDB_ROOT_PASSWORD')
 
