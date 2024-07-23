@@ -21,3 +21,18 @@ Objectives
   - Define the env_file option for the .env file.
 
   
+
+  ## Stage2
+
+Network & volume
+
+Description
+
+To be ready for further expansion with multiple services, it is common practice to define networks and volumes in docker-compose, even if there is currently only one service. Let's modify the docker-compose.yaml file by adding a network and a permanent volume for the service.
+
+Objectives
+
+- Define the volume with the mongo-data name;
+- Define the network with the hyper-task-manager-network name;
+- Add the network to the mongodb service.
+- Add the volume to the mongodb service and map it to the container's /data/db directory.

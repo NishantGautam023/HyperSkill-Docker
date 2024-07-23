@@ -1,5 +1,4 @@
-version: '3.1'
-
+version: "3.1"
 services:
   mongodb:
     image: mongo:6.0.8
@@ -11,3 +10,11 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
     env_file:
       - .env
+    networks:
+      - hyper-task-manager-network
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:
+networks:
+  hyper-task-manager-network:
