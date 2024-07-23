@@ -22,7 +22,7 @@ Key learnings include:
 - Setting up Docker networks for inter-service communication
 - Practical applications of Docker in multi-container environments
 
-### 3. Composer ⏳
+### 3. Composer ✅
 **[Project Link](https://hyperskill.org/projects/374?track=64)**
 
 This ongoing project focuses on:
