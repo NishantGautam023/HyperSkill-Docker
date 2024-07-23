@@ -30,6 +30,10 @@ services:
       - .env
     networks:
       - hyper-task-manager-network
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
 
 volumes:
   mongo-data:

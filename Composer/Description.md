@@ -58,3 +58,20 @@ Objectives
 - Define the MONGO_HOST_NAME environment variable with the mongodb value;
 - Define the MONGO_PORT_NUMBER environment variable with the 27017 value;
 - Define the env_file option for the .env file.
+
+
+
+## Stage4
+
+Sideline
+
+Description
+
+To ensure the proper functioning of the fastapi-task-manager service, incorporate additional tasks and commands into the docker-compose file. You need to map a port, create a network and define a dependency. Please follow the instructions below.
+
+Objectives
+
+- Add more attributes to the hyper-service service;
+- Map the host port 8000 to the container port 8000;
+- Add the hyper-task-manager-network network;
+- Define the dependency on the mongodb service.
