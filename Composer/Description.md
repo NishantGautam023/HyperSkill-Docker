@@ -19,3 +19,5 @@ Objectives
   -Define the MONGO_INITDB_ROOT_USERNAMEenvironment variable with the ${MONGO_INITDB_ROOT_USERNAME}value;
   - Define the MONGO_INITDB_ROOT_PASSWORD environment variable with the ${MONGO_INITDB_ROOT_PASSWORD} value;
   - Define the env_file option for the .env file.
+
+  
