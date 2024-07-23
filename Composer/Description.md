@@ -75,3 +75,32 @@ Objectives
 - Map the host port 8000 to the container port 8000;
 - Add the hyper-task-manager-network network;
 - Define the dependency on the mongodb service.
+
+
+## Stage5
+
+Get started
+
+Description
+
+Great job on accomplishing the assigned tasks! Now, let's initiate the services by executing the suitable docker-compose command. But before that, don't forget to create a .env file with secrets.
+
+Objectives
+
+- Create a .env file in the project directory with the following content:
+the MONGO_INITDB_ROOT_USERNAME key with the admin value;
+the MONGO_INITDB_ROOT_PASSWORD key with the 84225adce^/ value.
+- Start the defined services in the docker-compose.yaml file.
+
+
+## Stage6
+
+An essential capability of the docker-compose tool is its ability to halt services effortlessly and remove all associated containers, volumes, and networks. Proceed to stop all the services and delete the containers, networks, and volumes defined in your docker-compose file.
+
+Use the commands that will delete your volumes cautiously and ensure that you have backed up any important data before running it.
+
+Once you have deleted a tagged image, you can employ the docker image prune command to remove any dangling images. Exercise caution while using this command.
+Objectives
+
+- Stop the services, delete containers, networks, and volumes;
+- Remove the hyper-service image from the system.
